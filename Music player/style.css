@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(243, 222, 240);
+}
+nav{
+ font-family: 'Varela Round', sans-serif;;
+}
+nav ul {
+    display: flex;
+    height: 60px;
+    color: rgb(241, 185, 232) ;
+    background-color: black;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  
+}
+.brand img{
+    padding:  0px 8px;
+    width: 45px;
+    
+}
+ul li{
+    padding:  0 20px;
+}
+.container{
+    background-color: black;
+    color:white;
+    font-family: 'Varela Round', sans-serif;
+    min-height: 65vh;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    background-image: url('cover.jpg');
+    background-size: cover;
+}
+
+.bottom{
+    height: 120px;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;  
+}
+.icons{
+ margin-top: 14px;
+ /* margin-bottom: 24px; */
+}
+#myProgressBar{
+    margin-top: 20px;
+    width:80vw ;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 45px;
+}
+.song_item{
+    height: 50px;
+    display: flex;
+    /* width: 80%; */
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+.song_item img{
+     width: 45px;
+     margin: 0 23px;
+     border-radius: 50px;
+}
+.timestamp{
+
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-family:  'Varela Round', sans-serif;
+}
+.songinfo img{
+  opacity: 0;
+  transition: opacity 3s ease-in;
+}
+#masterPlay{
+    cursor: pointer;
+}
+#masterSongName{
+    padding: 0 15px;
+}

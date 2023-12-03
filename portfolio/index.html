@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div id="wrapperLoad">
+      <div class="elemet">
+        <img src="images/name.png" alt="">
+      </div>
+      <div class="elemet">
+        <h3>MERN Stack developer</h3>
+      </div>
+      <div class="elemet">
+       <h4>Love to create websites.</h4>
+      </div>
+      <div class="elemet">
+        <img src="images/name.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="bg">
+    <nav id="navbar">
+      <div  class="logo navitems">
+        ❤
+        <img src="images/logoblack .png" alt="">
+        ❤
+      </div>
+      <div id="links">
+        <a class="navitems" href="#">Home</a>
+        <a class="navitems" href="#">Projects</a>
+        <a class="navitems" href="#contact">Contact</a>
+        <i class="fa-solid fa-magnifying-glass navitems"></i>
+        <i class="fa-solid fa-bars navitems" id="menu"></i>
+      </div>
+    </nav>
+
+    <div id="sections">
+      <img id="splash" src="images/splash1.png" alt="">
+     <div id="left">
+      <div id="smline"></div>
+         <h4 class="letfItems">Hello, I am 👋</h4>
+         <img class="letfItems"src="images/name.png" alt="">
+         <h5 class="letfItems">A desinger from <span>Nepal.</span></h5>
+        <div  class="playbtn letfItems">
+        <img id="image" src="images/playButton.png" alt="">
+        <h5 >See my <span id="bold">work profile</span> </h5>
+      </div>
+      <div class="letfItems" id="contact">
+        <h3>contact me</h3>
+        <h6>Email: <span>manishapriyar196@gmail.com</span></h6>
+        <h6>Contact Number: <span>9811650326</span></h6>
+      </div>
+     </div>
+     <div id="right">
+      <img src="images/manu dd.png" alt="">
+     </div>
+     <img id="splash1" src="images/splash1.png" alt="">
+    </div>
+    <div id="section2">
+      
+    </div>
+
+   
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ebe7039f71.js" crossorigin="anonymous"></script>
+  <script>var menu = document.querySelector('#menu');
+    var bg = document.querySelector("#bg");
+    
+     menu.addEventListener('click', function(){
+      bg.style.tranfrom = 'scale(.8)'
+      bg.style.borderRadius = '10px'
+      bg.style.boxShowdow = '0 150px 45px -100px rgba(0,0,0,0.2';
+    
+     });</script>
+</body>
+</html>

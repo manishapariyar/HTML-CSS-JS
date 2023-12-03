@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+  script(src='../static/script.js')
+block style
+      style
+        include ../static/style.css
+        include ../static/styleContact.css
+
+block content
+    .container
+      .contact_box
+        h1 Join Our Dance Academy
+        form(action="", method="post")
+          .form_container
+            .form_content
+              label(for="name") Your Name
+              input(type="text", id="name", name="name", placeholder="Enter your name")
+            .form_content
+              label(for="email") Your Email
+              input(type="email", id="email", name="email", placeholder="Enter your email")
+            .form_content
+              label(for="phone") Your Phone Number
+              input(type="tel", id="phone", name="phone", placeholder="Enter your phone number")
+            .form_content
+              label(for="address") Your Address
+              textarea(name="address", id="address", cols="50", rows="4", placeholder="Enter your address")
+            .form_content
+              label(for="dance_style") Dance Style of Interest
+              select(name="dance_style", id="dance_style")
+                option(value="ballet") Ballet
+                option(value="hip_hop") Hip Hop
+                option(value="salsa") Salsa
+                option(value="contemporary") Contemporary
+                option(value="other") Other
+            .form_content
+              label(for="experience") Dance Experience Level
+              select(name="experience", id="experience")
+                option(value="beginner") Beginner
+                option(value="intermediate") Intermediate
+                option(value="advanced") Advanced
+            .textarea_content
+              label(for="message") Your Message
+              textarea(name="message", id="message", cols="50", rows="4", placeholder="Enter your message")   
+            .form_content
+              label(for="newsletter") Subscribe to Newsletter (optional)
+              input(type="checkbox", name="newsletter", id="newsletter")
+              span Join our newsletter to stay updated on events and classes.
+          .btn_container
+            button(type="submit") Join Now

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #e4dbdb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(155, 146, 146, 0.1);
+  }
+  
+  .contact_box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form_content {
+    margin:5px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  select {
+    height: 38px; /* Match the height of text inputs for consistency */
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  .form_content #newsletter, label{
+    margin-top: 10px;
+  }
+  
+  .btn_container {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Styling for the newsletter checkbox */
+  input[type="checkbox"] {
+    margin-right: 10px 5px ;
+  }
+  

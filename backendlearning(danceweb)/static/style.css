@@ -1,0 +1,163 @@
+
+body::before{
+   content: "";
+   opacity: 0.5;
+}
+li{
+    list-style: none;
+    margin: 20px;
+    font-weight: 700;
+    padding: 5px 15px;
+   
+ }
+ ul{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+ }
+ ul div#list{
+   display: flex;
+    align-items: center;
+    width: 95%;
+ }
+ ul div#logo{
+   display: flex;
+   flex-direction: column;
+  
+   color: white;
+   align-items: center;
+ 
+ }
+ ul div#logo img{
+   height: 50px;
+   filter: invert(1);
+ }
+
+ #navigationbar{
+   position: sticky;
+    background-color: rgb(32, 30, 32);
+    
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ a{
+    text-decoration: none;
+    color: rgb(255, 244, 244);
+ }
+ a:hover{
+    color:rgb(248, 164, 241);
+ }
+ #firstSection{
+    /* width: 400px; */
+    height: 500px;
+    /* background-color: rgb(204, 192, 216); */
+    background: url(../static/dance.jpg)   center/cover no-repeat ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    font-size: 35px;
+    flex-direction: column;
+   /* float: right; */
+   font-style: italic;
+   padding-bottom: 100px;
+   
+   
+ }
+ #firstSection div.small{
+    font-size: 1.6rem;
+ 
+ }
+ #secondSection h3{
+   padding: 40px;
+ }
+ 
+  h3{
+   /* margin-top: 40px; */
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 30px;
+   
+ }
+ .card{
+   border: 2px solid black;
+   border-radius: 15px;
+   width: 27.5%;
+   height: 70% ;
+   margin: 0px 20px;
+   display:inline-block;
+  
+ }
+ .card h4{
+   margin-top: 10px;
+   text-align: center;
+ }
+ #missonSection{
+   margin: 0px auto;
+   display: block;
+   width: 100%;
+   height: 360px;
+   background-color: rgb(239, 234, 243);
+   /* background-color: rgb(224, 188, 221); */
+   text-align: center;
+   
+ }
+
+.card-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+}
+div.card-img{
+   height: 150px;
+   padding: 6px 14px;
+   margin: 5px 9px;
+}
+ div.card-img img{
+   /* width:250px; */
+   height:inherit;
+ }
+
+ .card-content
+ {
+   padding: 0 10px;
+   margin:10px ;  
+ }
+ .card-content p{
+   font-size: 15px;
+   /* padding: 2px 13px; */
+ }
+ #secondSection{
+   height: 400px;
+  background-color: rgb(103, 91, 102);
+}
+ #splogo{
+   height: 150px;
+   max-width: 800px;
+   margin: 30px 400px;
+   /* padding: 30px 60px; */
+ }
+ .spImg{
+   height: 100px;
+   margin: 30px;
+ }
+ .spImg img{
+   height: inherit;
+   margin: 20px;
+ }
+ #footer{
+   float: bottom;
+   background-color: rgb(173, 106, 173);
+   padding: 25px 15px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

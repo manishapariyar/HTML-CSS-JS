@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title DIYA's Dance
+    style
+      include ../static/style.css
+  body
+    nav#navigationbar 
+       ul 
+          div#logo
+             img(src="../static/img/logo.png", alt="")
+             |DDA
+          div#list   
+             li #[a(href="/") Home ]
+             li #[a(href="/") About] 
+             li #[a(href="/") Contact Us]
+             li #[a(href="/") Courses]
+    section#firstSection 
+          div  Welcome to DIYA's Dance Academy 
+          div.small Dance And Enjoy
+          //- img(src="../static/dance.jpg", alt="")
+    section#missonSection 
+          h3 Our mission   
+          div.card
+            h4 Artistic Excellence 
+            div.card-box
+              div.card-img
+                 img(src="../static/img/d1.png", alt="")
+              div.card-content
+                 p At our dance academy, we're dedicated to cultivating  artistic excellence in every dancer.
+          div.card
+            h4 Cultural and Artistic Appreciation 
+            div.card-box
+               div.card-img
+                  img(src="../static/img/d2.png", alt="")
+               div.card-content
+                  p At our dance academy, we're dedicated to cultivating  artistic excellence in every dancer.
+          div.card
+            h4 Physical and Mental Well-being
+            div.card-box
+                div.card-img
+                   img(src="../static/img/d3.png", alt="")
+                div.card-content
+                   p At our dance academy, we're dedicated to cultivating  artistic excellence in every dancer. 
+           
+    section#secondSection 
+          h3 Our Sponsors
+          div#splogo
+             img.spImg(src="../static/img/logo1.png", alt="")
+             img.spImg(src="../static/img/logo2.png", alt="")
+             img.spImg(src="../static/img/logo3.png", alt="")
+    footer#footer 
+          p Copyright © 2023 DIYA's Dance.com
+    script
+      include ../static/script.js
+      

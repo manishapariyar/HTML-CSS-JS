@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+   margin: 0;
+   padding: 0;
+}
+ body{
+    background-color: blueviolet;
+ }
+ #main_box{
+    background-color: bisque;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 34px;
+   
+    border-radius: 10px;
+    /* display: flex; */
+     border: 2px solid black;
+    /* justify-content: center; */
+ }
+ #display{
+    margin-top: 24px ;
+    margin-left: 20px;
+    color: black;
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 50px;
+
+ }
+
+   #btn_container{
+    height: 370px;
+    margin-top: 8px;
+    margin-left: 20px;
+    background-color: white;
+    width: 90%;
+    border: 2px solid rgb(70, 66, 66);
+    border-radius: 3px;
+
+    
+   }
+   .btns{
+      margin: 6px 7px;
+      width:20%;
+      height: 60px;
+      border-radius: 5px;
+      background-color: rgb(226, 211, 211);
+      font-size: 30px;
+      color: rgb(39, 9, 83);
+   }
+   
+    </style>
+</head>
+<body>
+   <div id="main_box">
+    <input id="display" type="text">
+    <div id="btn_container">
+    <button class="btns" onclick="currentDispaly +='(';
+    document.querySelector(`#display`).value = currentDispaly;" >(</button>
+    <button class="btns" onclick="currentDispaly +=')';
+    document.querySelector(`#display`).value = currentDispaly;"  >)</button>
+    <button class="btns" onclick="currentDispaly +='%';
+    document.querySelector(`#display`).value = currentDispaly;" >%</button>
+    <button class="btns" onclick="currentDispaly='';
+    document.querySelector(`#display`).value = currentDispaly;" >AC</button>
+    <button class="btns" onclick="currentDispaly +='7';
+    document.querySelector(`#display`).value = currentDispaly;" >7</button>
+    <button class="btns" onclick="currentDispaly +='8';
+    document.querySelector(`#display`).value = currentDispaly;" >8</button>
+    <button class="btns" onclick="currentDispaly +='9';
+    document.querySelector(`#display`).value = currentDispaly;" >9</button>
+    <button class="btns" onclick="currentDispaly +='/';
+    document.querySelector(`#display`).value = currentDispaly;" >/</button>
+    <button class="btns" onclick="currentDispaly +='4';
+    document.querySelector(`#display`).value = currentDispaly;" >4</button>
+    <button class="btns" onclick="currentDispaly +='5';
+    document.querySelector(`#display`).value = currentDispaly;" >5</button>
+    <button class="btns" onclick="currentDispaly +='6';
+    document.querySelector(`#display`).value = currentDispaly;" >6</button>
+    <button class="btns" onclick="currentDispaly +='*';
+    document.querySelector(`#display`).value = currentDispaly;" >*</button>
+    <button class="btns" onclick="currentDispaly +='1';
+    document.querySelector(`#display`).value = currentDispaly;" >1</button>
+    <button class="btns" onclick="currentDispaly +='2';
+    document.querySelector(`#display`).value = currentDispaly;" >2</button>
+    <button class="btns" onclick="currentDispaly +='3';
+    document.querySelector(`#display`).value = currentDispaly;" >3</button>
+    <button class="btns" onclick="currentDispaly +='-';
+    document.querySelector(`#display`).value = currentDispaly;" >-</button>
+    <button class="btns" onclick="currentDispaly +='0';
+    document.querySelector(`#display`).value = currentDispaly;" >0</button>
+    <button class="btns" onclick="currentDispaly +='.';
+    document.querySelector(`#display`).value = currentDispaly;" >.</button>
+    <button class="btns" onclick="currentDispaly = eval(currentDispaly);
+    document.querySelector(`#display`).value = currentDispaly;"  style="color:lightpink;">=</button>
+    <button class="btns" onclick="currentDispaly +='+';
+    document.querySelector(`#display`).value = currentDispaly;" >+</button>
+
+    </div>
+</div>
+<script>
+    let currentDispaly = '';
+document.querySelector(`#display`).value = currentDispaly;
+</script>
+</body>
+</html>
