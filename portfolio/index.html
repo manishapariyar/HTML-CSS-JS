@@ -4,80 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="loader">
-    <div id="wrapperLoad">
-      <div class="elemet">
-        <img src="images/name.png" alt="">
-      </div>
-      <div class="elemet">
-        <h3>MERN Stack developer</h3>
-      </div>
-      <div class="elemet">
-       <h4>Love to create websites.</h4>
-      </div>
-      <div class="elemet">
-        <img src="images/name.png" alt="">
-      </div>
-    </div>
-  </div>
-  <div id="bg">
-    <nav id="navbar">
-      <div  class="logo navitems">
-        ❤
-        <img src="images/logoblack .png" alt="">
-        ❤
-      </div>
-      <div id="links">
-        <a class="navitems" href="#">Home</a>
-        <a class="navitems" href="#">Projects</a>
-        <a class="navitems" href="#contact">Contact</a>
-        <i class="fa-solid fa-magnifying-glass navitems"></i>
-        <i class="fa-solid fa-bars navitems" id="menu"></i>
-      </div>
+  <header class="header">
+    <a  class="logo" href="#" ><img  src="images/logoblack .png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <i class="ri-menu-3-line "></i>
+      </ul>
     </nav>
-
-    <div id="sections">
-      <img id="splash" src="images/splash1.png" alt="">
-     <div id="left">
-      <div id="smline"></div>
-         <h4 class="letfItems">Hello, I am 👋</h4>
-         <img class="letfItems"src="images/name.png" alt="">
-         <h5 class="letfItems">A desinger from <span>Nepal.</span></h5>
-        <div  class="playbtn letfItems">
-        <img id="image" src="images/playButton.png" alt="">
-        <h5 >See my <span id="bold">work profile</span> </h5>
+  </header>
+  <div class="mainbox">
+    <div class="left">
+      <div class="smline"></div>
+      <h4 >Hello, I'm 👋 </h4>
+      <div class="name">
+        <img  c src="images/name.png" alt="">
       </div>
-      <div class="letfItems" id="contact">
-        <h3>contact me</h3>
-        <h6>Email: <span>manishapriyar196@gmail.com</span></h6>
-        <h6>Contact Number: <span>9811650326</span></h6>
-      </div>
-     </div>
-     <div id="right">
-      <img src="images/manu dd.png" alt="">
-     </div>
-     <img id="splash1" src="images/splash1.png" alt="">
+      <p >frontend developer from <span class="cityName">nepal.</span></p>
+      <div class = 'play'><img src="images/playButton.png" alt=""><p>see my <span class="bold">work profile</span></p></div>
     </div>
-    <div id="section2">
-      
-    </div>
-
-   
+   <div class="right">
+    <img src="images/manu-dd.png" alt="">
+   </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <div class="containerbox">
+    <div id="contact">
+      <p><u>Email:</u> <span class="contactSpan">manishapariyar196@gmail.com</span></p>
+      <p><u>Number:</u> <span class="contactSpan">9811650326</span></p>
+      <div class="icons">
+        <a href=""><i class="ri-github-fill github"></i></a>
+        <a href=""><i class="ri-facebook-fill facebook"></i></a>
+        <a href=""><i class="ri-linkedin-box-fill linkedin"></i></a>
+        <a href=""><i class="ri-instagram-line instagram"></i></a>
+
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/ebe7039f71.js" crossorigin="anonymous"></script>
-  <script>var menu = document.querySelector('#menu');
-    var bg = document.querySelector("#bg");
-    
-     menu.addEventListener('click', function(){
-      bg.style.tranfrom = 'scale(.8)'
-      bg.style.borderRadius = '10px'
-      bg.style.boxShowdow = '0 150px 45px -100px rgba(0,0,0,0.2';
-    
-     });</script>
 </body>
 </html>
