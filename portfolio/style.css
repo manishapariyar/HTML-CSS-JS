@@ -106,57 +106,7 @@ nav li a:hover{
  height: 80%;
   margin: 2vw 4vw  0 4vw;
 }
-.containerbox
-{
-  width: 100%;
-  height: 300px;
-  display: flex;
-position: relative;
-}
 
-#contact 
-{
-  margin-top: 15vw;
-  margin-left: 10vw;
-  
-}
-#contact p{
-  font-weight: 700;
-  font-size: 1.4vw;
-  color: #bcb7b7;
-}
-.contactSpan{
-  color:orange;
-  font-size: 1.3vw;
-  font-weight: 700;
- }
- .icons{
-  margin-top: 1vw;
-  width: 40%;
-  height: 80px;
-  display: flex;
-  gap: 1vw;
- }
- .icons a{
-  text-decoration: none;
-  
- }
- .facebook{
-  font-size: 1.9vw;
-  color: #0866ff;
- }
-.linkedin{
-  color:#016eae;
-  font-size: 1.9vw;
- }
- .instagram{
-  font-size: 1.9vw;
-   color:  #F56040;
- }
- .github{
-  font-size: 1.9vw;
-  color:#22252a;
- }
  .bubbles img{
    width: 4vw;
    animation: bubble 7s linear infinite;

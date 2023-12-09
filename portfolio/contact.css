@@ -1,0 +1,105 @@
+
+*{
+  margin:0;
+  padding:0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav i{
+  display: none;
+}
+ .logo img{
+  width: 4vw;
+  margin: 5vw;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  margin: 5vw;
+  list-style: none;
+}
+nav li a {
+text-decoration: none;
+color: #000;
+font-size: 1.2vw;
+font-weight: 700;
+}
+nav li a:hover{
+  color: blue;
+  background-color: #dadada;
+  padding: 0.8vw;
+  border-radius: 1.5vw;
+}
+.containerbox
+{
+width: 100%;
+height: 300px;
+display: flex;
+position: relative;
+}
+#contactimage{
+  height: 100%;
+  width: 45%;
+}
+#contactimage img{
+  width: 27vw;
+}
+
+#contact 
+{
+  width: 55%;
+  height: 100%;
+  margin: 8vw;
+}
+#contact p{
+font-weight: 700;
+font-size: 1.4vw;
+color: #bcb7b7;
+}
+.contactSpan{
+color:orange;
+font-size: 1.3vw;
+font-weight: 700;
+}
+.icons{
+margin-top: 1vw;
+width: 40%;
+height: 80px;
+display: flex;
+gap: 1vw;
+}
+ #contact .paragraph{
+  color: #3e3b3b;
+}
+.icons a{
+text-decoration: none;
+}
+.facebook{
+font-size: 1.9vw;
+color: #0866ff;
+}
+.linkedin{
+color:#016eae;
+font-size: 1.9vw;
+}
+.instagram{
+font-size: 1.9vw;
+color:  #F56040;
+}
+.github{
+font-size: 1.9vw;
+color:#22252a;
+}
