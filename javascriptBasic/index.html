@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label id="label">total is :</label><br>
+  <input type="text" name="text" id="text">
+  <input type="text" name="text" id="text2">
+  <br>
+  <button id="btn">click here</button>
+  <br>
+  <br>
+  <h1 id="number">0</h1>
+  <button id="pervious">Pervious</button>
+  <button id="reset">Reset</button>
+  <button id="next">Next</button>
+  <label for="myCheckbox" id="checkboxlabel">done</label>
+  <input type="checkbox" name="" id="myCheckbox">
+  <button id="buttnnnn">click here</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <label for="" id="thelabel">display</label>
+</body>
+<script>
+  let a ;
+  let b;
+  let c 
+
+  document.getElementById('btn').onclick = function(){
+    a = document.getElementById('text').value;
+    b = document.getElementById('text2').value;
+    a = Number(a)
+     b = Number(b)
+     c = Math.round(Math.sqrt(Math.pow(a,2) + Math. pow(b , 2)));
+    document.getElementById('label') . innerHTML= `the total number is ${c} now`;
+  }
+    let num=0;
+   document.getElementById('pervious').onclick = function(){
+    num -=1;
+    document.getElementById('number').innerHTML = num;
+  }
+  document.getElementById('reset').onclick = function(){
+   num = 0;
+   document.getElementById('number').innerHTML = num;
+  }
+   
+   document.getElementById('next').onclick = function(){
+    num +=1;
+    document.getElementById('number').innerHTML = num;
+   }
+
+   document.getElementById('buttnnnn').onclick = function(){
+    if(document.getElementById('myCheckbox').checked){
+    document.getElementById('checkboxlabel').innerHTML = 'haha you complete';
+   }
+   else{
+    document.getElementById('checkboxlabel').innerHTML = 'haha you not  complete';
+   }
+   }
+  // let Mynum = 34532.455;
+  // Mynum = Mynum.toLocaleString('hi-IN', {style:"currency", currency:"INR"});
+  // console.log(Mynum);
+  // let Mynum1 = 34532.455;
+  // Mynum1 = Mynum1.toLocaleString('ne-NP', {style:"currency", currency:"NPR"});
+  // console.log(Mynum1);
+  // let Mynum2 = 455;
+  // Mynum2 = Mynum2.toLocaleString(undefined, {style:"unit", unit:"celsius"});
+  // console.log(Mynum2);
+   let student =  ['radhe', 'shyam', 'harry','mohan'];
+   student.forEach(displayname);
+   function displayname(elements){
+     console.log(elements)
+    
+   }
+   let number = [12,34,23,23,22];
+   let total = number.reduce(checkout);
+   document.getElementById('thelabel').innerHTML = total;
+   function checkout(total, element){
+    return total+element;
+   }
+   class ddkovena{
+    koveha="mero vena";
+    konho(){
+      console.log("aap ke dd k patiii")
+    }
+   }
+    nitu = new ddkovena;
+    console.log(nitu.konho());
+    class ddhomata{
+      ksko = "terooooo ho k"
+    }
+</script>
+</html>

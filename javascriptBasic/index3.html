@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Car{
+      constructor(power){
+        this._power = power;
+      }
+      get power(){
+        return this._power;
+      }
+    }
+    let car = new Car(500000);
+    let car1 = new Car(300000);
+    let car2 = new Car(400000);
+    const cars = [car, car1 , car2];
+    console.log(`car is ${cars[2].power}`);
+    Startseepower(cars);
+     function  Startseepower(cars){
+      for(const car of cars)
+      {
+        console.log(car.power);
+      }
+    }
+
+    changepower(car ,'gray');
+   
+    function changepower(car, change){
+      console.log(`the new value ${car.
+      power} ${change}`);
+    }
+    setTimeout(changepower, 1000);
+    try{
+     x = window.prompt('enter the number');
+     x = Number(x);
+     if(isNaN(x)) throw 'that was not a number';
+     if(x == '') throw ' enter the number';
+     console.log(`${x} is the number`)
+    }
+    catch(error){
+      console.log(error);
+    }
+    
+
+
+
+  </script>
+</body>
+</html>

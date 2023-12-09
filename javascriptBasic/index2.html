@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="" id="mylabel">Enter a Temperature</label><br>
+  <input type="text" name="" id="Temtext"><br>
+ <label for="">convert to:</label><br>
+   <input type="radio" name="unit" id="celsius">
+   <label for="celsius">Celsius</label>
+   <br>
+   <input type="radio" name="unit" id="fahrenheit">
+   <label for="fahrenheit">fahrenheit</label><br>
+   <button id="submit">submit</button><br>
+   <label for="" id="result">Result</label>
+</body>
+<script>
+
+  let num;
+   document.getElementById('submit').onclick=
+    function(){
+     num = document.getElementById('Temtext').value;
+     num = Number(num)
+     if(document.getElementById('celsius').checked){
+       
+     num = tocelsious(num);
+     num =num.toLocaleString(undefined, {style:"unit", unit:"celsius"})
+   document.getElementById('result').innerHTML = num;
+     }
+     else if(document.getElementById('fahrenheit').checked){
+      num= tofahrenheit(num);
+      num= num. toLocaleString(undefined, {style:"unit", unit:"fahrenheit"})
+      document.getElementById('result').innerHTML =num;
+     }
+     else{
+      document.getElementById('result').innerHTML ="select a unit"
+     }
+    }
+    function tocelsious(){
+    return (num-32)*(5/9)
+  }
+  function tofahrenheit(){
+    return num*9/5+32;
+  }
+   
+</script>
+</html>
