@@ -97,13 +97,13 @@ nav li a:hover{
   color: #000;
   font-weight: 700;
 }
-.right, #contact{
+.right{
   width: 45%;
   height: 100%;
+  
 }
 .right img{
   width: 34vw;
- height: 80%;
   margin: 2vw 4vw  0 4vw;
 }
 
@@ -167,6 +167,7 @@ nav li a:hover{
  }
 
 @media (max-width:600px) {
+ 
   nav i{
     display: block;
     font-size: 8vw;
@@ -235,4 +236,5 @@ nav li a:hover{
 .bubbles img{
   width: 10vw;
 }
+
 }

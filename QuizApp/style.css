@@ -1,0 +1,93 @@
+*,*::before,*::after{
+
+  box-sizing: border-box;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+:root{
+  --hue-neutral:200;
+  --hue-wrong: 0;
+  --hue-correct:145;
+ }
+ 
+body{
+  --hue:var(--hue-neutral);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct{
+  --hue: var(--hue-correct);
+}
+body.wrong{
+  --hue: var(--hue-wrong);
+}
+.maincontent{
+  width: 600px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: .8rem;
+  box-shadow: 0 0 10px 2px;
+  padding: 10px;
+
+}
+.gamedisplay{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+font-size: 1.2rem;
+font-weight: 700 ;
+}
+#answer-btn{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 20px 0;
+  gap: 15px;
+  padding: 10px ;
+
+
+}
+
+  .btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 100%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: .9rem;
+  padding:  10px 20px;
+  color: white;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+.btn:hover {
+  border-color: black;
+}
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.start-btn, .next-btn {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.hide{
+  display: none;
+}

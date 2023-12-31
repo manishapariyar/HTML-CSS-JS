@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  <label for="" id="label">..............</label>
   <script>
     class Car{
       constructor(power){
@@ -45,7 +46,28 @@
     catch(error){
       console.log(error);
     }
-    
+    async function fileloaded(){
+      const promise = new Promise((resolve, reject) => {
+  let fileloaded = true;
+    if(fileloaded){
+      resolve("file loaded");
+    }
+    else{
+      reject('file is note loaded')
+    }
+    })
+    try{
+    document.getElementById('label').innerHTML = await promise;
+  }
+  catch(error){
+    document.getElementById('label').innerHTML= error;
+  }
+    }
+   
+    fileloaded();
+    // promise.then(value=>console.log(value));
+    // promise.catch(error => console.log(error));
+
 
 
 
