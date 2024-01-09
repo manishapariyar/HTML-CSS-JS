@@ -14,7 +14,7 @@ const url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
       result.innerHTML = `
       <div class="word">
       <h3>${word}</h3>
-      <button onclick = "playsound()">
+      <button onclick ="playSound()">
         <i class="fa-solid fa-volume-high"></i>
       </button>
     </div>
@@ -26,7 +26,7 @@ const url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
      ${data[0].meanings[0].definitions[0].definition}
     </p>
     <p class="word-example">
-    ${data[0].meanings[0].definitions[0].example}
+    ${data[0].meanings[0].definitions[0].example || ""}
     </p>`;
     sound.setAttribute('src', `https:${data[0].phonetics[0].audio}`);
      })
@@ -34,6 +34,9 @@ const url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
       result.innerHTML = `<h3 class= "error"> couldn't find The word </h3>`
      })
    });
-   function playsound(){
-    sound.play();
+   function playSound(){
+    const newLocal = sound.play();
+    if(newLocal !== undefined){
+      newLocal.then(_ => {}).catch(err => console.log(err));
+    }
    }

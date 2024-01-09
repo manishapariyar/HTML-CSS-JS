@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>CountryGuideApp</title>
+  <script src="https://kit.fontawesome.com/ebe7039f71.js" crossorigin="anonymous"></script>
+  <style>
+   .container{
+  background-color: #ffffff;
+  width: 50vw;
+ position: absolute;
+ transform: translate(-50% , -50%);
+ top: 50%;
+ left: 50%;
+ padding: 80px 50px;
+ border-radius: 10px;
+ box-shadow: 20px 20px 40px rbga( 38,33,0,0.2);
+}
+.search-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #a6cd43;
+}
+
+.search-box input{
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e07661;
+  font-size: 16px;
+}
+
+.search-btn{
+  padding: 15px 0 ;
+  width: 25%;
+  background-color:  #eb3814;
+  border: none;
+  outline: none;
+  color:#ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+.result{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.flags img{
+  width: 150px;
+  height: 150px;
+  margin:  0 auto;
+  margin-left: 50px;
+}
+.capital{
+  display: flex;
+  margin: 15px;
+  gap: 4px;
+}
+.first{
+  margin-top: 50px;
+}
+#capital, #Continent,
+ #Population, #Currency,
+  #Language{
+  text-transform: capitalize;
+}
+.infocontainer{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.error{
+  text-align: center;
+  font-size: 14px;
+
+}
+
+
+  </style>
+</head>
+<body>
+  <audio id="sound"></audio>
+  <div class="container">
+    <div class="search-box">
+      <input type="text"
+       placeholder="Enter the country name here..." id="country-inp">
+      <button class="search-btn" id="search-btn">Search</button>
+    </div>
+<div class="result" id="result"></div> 
+      
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
